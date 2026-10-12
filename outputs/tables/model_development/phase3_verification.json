@@ -1,0 +1,15 @@
+{
+  "no_vehicle_overlap": true,
+  "smote_used": false,
+  "final_winner_selected": false,
+  "default_threshold": 0.5,
+  "models": [
+    "Logistic Regression",
+    "Random Forest",
+    "XGBoost"
+  ],
+  "feature_configurations": [
+    "with_abs_fault_indicator",
+    "without_abs_fault_indicator"
+  ]
+}

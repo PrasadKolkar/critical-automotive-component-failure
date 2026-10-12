@@ -1,0 +1,43 @@
+feature_name,data_type,feature_group,modelling_status,reason
+vehicle_id,object,identifier/time,exclude - identifier,"Retained for grouping and diagnostics, not as a predictor."
+brand,object,unclassified,include,Leakage-safe original telemetry or categorical metadata candidate.
+timestamp,datetime64[ns],identifier/time,retain separately,"Retained for ordering, diagnostics, and temporal analysis."
+odometer_reading,float64,vehicle-operation telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+engine_temp_c,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+engine_rpm,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+oil_pressure_psi,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+coolant_temp_c,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+fuel_level_percent,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+fuel_consumption_lph,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+engine_load_percent,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+throttle_pos_percent,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+air_flow_rate_gps,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+exhaust_gas_temp_c,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+vibration_level,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+engine_hours,float64,engine telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+brake_fluid_level_psi,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+brake_pad_wear_mm,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+brake_temp_c,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+abs_fault_indicator,int64,braking telemetry,sensitivity-analysis feature,Potential diagnostic proxy; evaluate included/excluded later.
+brake_pedal_pos_percent,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+wheel_speed_fl_kph,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+wheel_speed_fr_kph,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+wheel_speed_rl_kph,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+wheel_speed_rr_kph,float64,braking telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+battery_voltage_v,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+battery_current_a,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+battery_temp_c,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+alternator_output_v,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+battery_charge_percent,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+battery_health_percent,float64,battery/electrical telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+vehicle_speed_kph,float64,vehicle-operation telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+ambient_temp_c,float64,environmental telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+humidity_percent,float64,environmental telemetry,include,Leakage-safe original telemetry or categorical metadata candidate.
+gps_latitude,float64,GPS/location variables,include,Leakage-safe original telemetry or categorical metadata candidate.
+gps_longitude,float64,GPS/location variables,include,Leakage-safe original telemetry or categorical metadata candidate.
+engine_failure_imminent,int64,outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.
+brake_issue_imminent,int64,outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.
+battery_issue_imminent,int64,outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.
+failure_date,datetime64[ns],outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.
+failure_type,object,outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.
+any_imminent_issue,int64,outcome/leakage variables,exclude - leakage,Defines or directly reveals the outcome.

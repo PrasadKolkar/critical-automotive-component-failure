@@ -1,0 +1,16 @@
+feature_a,feature_b,correlation,absolute_correlation
+odometer_reading,battery_health_percent,-0.1287558555178037,0.1287558555178037
+brake_fluid_level_psi,brake_temp_c,-0.1285412547419075,0.1285412547419075
+brake_pad_wear_mm,battery_health_percent,-0.11071268093887221,0.11071268093887221
+engine_hours,battery_health_percent,0.09985831761401516,0.09985831761401516
+odometer_reading,brake_pad_wear_mm,0.09471885867653917,0.09471885867653917
+engine_hours,brake_pad_wear_mm,0.0897334995867653,0.0897334995867653
+oil_pressure_psi,vibration_level,-0.07563384235877516,0.07563384235877516
+engine_temp_c,vibration_level,0.06819487961332414,0.06819487961332414
+vehicle_speed_kph,gps_latitude,0.06808021332305259,0.06808021332305259
+throttle_pos_percent,battery_voltage_v,0.06480693554159109,0.06480693554159109
+exhaust_gas_temp_c,ambient_temp_c,0.06084288440918657,0.06084288440918657
+alternator_output_v,battery_health_percent,-0.05930337823363811,0.05930337823363811
+wheel_speed_fr_kph,battery_current_a,0.05788544676602687,0.05788544676602687
+air_flow_rate_gps,alternator_output_v,-0.057448630907004444,0.057448630907004444
+battery_current_a,gps_latitude,-0.0571527708431233,0.0571527708431233

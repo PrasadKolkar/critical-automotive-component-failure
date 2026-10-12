@@ -1,0 +1,169 @@
+{
+  "primary_target": "any_imminent_issue",
+  "component_targets": [
+    "engine_failure_imminent",
+    "brake_issue_imminent",
+    "battery_issue_imminent"
+  ],
+  "feature_lists": {
+    "standard_predictors": [
+      "brand",
+      "odometer_reading",
+      "engine_temp_c",
+      "engine_rpm",
+      "oil_pressure_psi",
+      "coolant_temp_c",
+      "fuel_level_percent",
+      "fuel_consumption_lph",
+      "engine_load_percent",
+      "throttle_pos_percent",
+      "air_flow_rate_gps",
+      "exhaust_gas_temp_c",
+      "vibration_level",
+      "engine_hours",
+      "brake_fluid_level_psi",
+      "brake_pad_wear_mm",
+      "brake_temp_c",
+      "brake_pedal_pos_percent",
+      "wheel_speed_fl_kph",
+      "wheel_speed_fr_kph",
+      "wheel_speed_rl_kph",
+      "wheel_speed_rr_kph",
+      "battery_voltage_v",
+      "battery_current_a",
+      "battery_temp_c",
+      "alternator_output_v",
+      "battery_charge_percent",
+      "battery_health_percent",
+      "vehicle_speed_kph",
+      "ambient_temp_c",
+      "humidity_percent",
+      "gps_latitude",
+      "gps_longitude"
+    ],
+    "predictors_with_proxies": [
+      "brand",
+      "odometer_reading",
+      "engine_temp_c",
+      "engine_rpm",
+      "oil_pressure_psi",
+      "coolant_temp_c",
+      "fuel_level_percent",
+      "fuel_consumption_lph",
+      "engine_load_percent",
+      "throttle_pos_percent",
+      "air_flow_rate_gps",
+      "exhaust_gas_temp_c",
+      "vibration_level",
+      "engine_hours",
+      "brake_fluid_level_psi",
+      "brake_pad_wear_mm",
+      "brake_temp_c",
+      "brake_pedal_pos_percent",
+      "wheel_speed_fl_kph",
+      "wheel_speed_fr_kph",
+      "wheel_speed_rl_kph",
+      "wheel_speed_rr_kph",
+      "battery_voltage_v",
+      "battery_current_a",
+      "battery_temp_c",
+      "alternator_output_v",
+      "battery_charge_percent",
+      "battery_health_percent",
+      "vehicle_speed_kph",
+      "ambient_temp_c",
+      "humidity_percent",
+      "gps_latitude",
+      "gps_longitude",
+      "abs_fault_indicator"
+    ],
+    "numerical_predictors": [
+      "odometer_reading",
+      "engine_temp_c",
+      "engine_rpm",
+      "oil_pressure_psi",
+      "coolant_temp_c",
+      "fuel_level_percent",
+      "fuel_consumption_lph",
+      "engine_load_percent",
+      "throttle_pos_percent",
+      "air_flow_rate_gps",
+      "exhaust_gas_temp_c",
+      "vibration_level",
+      "engine_hours",
+      "brake_fluid_level_psi",
+      "brake_pad_wear_mm",
+      "brake_temp_c",
+      "brake_pedal_pos_percent",
+      "wheel_speed_fl_kph",
+      "wheel_speed_fr_kph",
+      "wheel_speed_rl_kph",
+      "wheel_speed_rr_kph",
+      "battery_voltage_v",
+      "battery_current_a",
+      "battery_temp_c",
+      "alternator_output_v",
+      "battery_charge_percent",
+      "battery_health_percent",
+      "vehicle_speed_kph",
+      "ambient_temp_c",
+      "humidity_percent",
+      "gps_latitude",
+      "gps_longitude"
+    ],
+    "categorical_predictors": [
+      "brand"
+    ],
+    "diagnostic_proxy_features": [
+      "abs_fault_indicator"
+    ],
+    "diagnostic_proxy_numerical": [
+      "abs_fault_indicator"
+    ],
+    "diagnostic_proxy_categorical": [],
+    "leakage_exclusions": [
+      "failure_type",
+      "failure_date",
+      "engine_failure_imminent",
+      "brake_issue_imminent",
+      "battery_issue_imminent",
+      "any_imminent_issue"
+    ],
+    "identifier_exclusions": [
+      "vehicle_id"
+    ],
+    "retained_separately": [
+      "timestamp"
+    ]
+  },
+  "failure_date_summary": {
+    "sentinel_value": "2050-01-01",
+    "sentinel_count": 1935,
+    "sentinel_positive_rows": 0,
+    "sentinel_negative_rows": 1935,
+    "non_sentinel_count": 35,
+    "non_sentinel_positive_rows": 35,
+    "non_sentinel_negative_rows": 0,
+    "real_positive_failure_date_min": "2023-01-02 04:12:00",
+    "real_positive_failure_date_max": "2023-01-07 23:12:00",
+    "real_positive_failure_date_unique": 35
+  },
+  "distinct_positive_event_estimates": {
+    "positive_rows": 35,
+    "positive_vehicles": 25,
+    "distinct_vehicle_failure_date": 35,
+    "distinct_vehicle_failure_date_type": 35,
+    "distinct_failure_date_type": 35
+  },
+  "preprocessing_strategy": {
+    "logistic_regression": "One-hot encode categorical predictors and scale numerical predictors inside each training fold.",
+    "random_forest": "One-hot encode categorical predictors; numerical scaling generally unnecessary.",
+    "xgboost": "One-hot encode categorical predictors; numerical scaling generally unnecessary.",
+    "diagnostic_proxy_sensitivity": "Run controlled Phase 3 sensitivity analysis with and without diagnostic proxy features."
+  },
+  "data_quality_decision": {
+    "duplicate_vehicle_timestamps": "Preserve all rows for Phase 2; duplicate timestamp groups contain differing telemetry and sometimes differing outcomes.",
+    "suspicious_telemetry_values": "Preserve raw values; do not clip or remove without domain confirmation or controlled later experiment.",
+    "processed_dataset_copy": "Not saved; original Resources file remains the source of truth."
+  }
+}

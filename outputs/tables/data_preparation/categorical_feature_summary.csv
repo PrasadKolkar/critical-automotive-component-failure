@@ -1,0 +1,2 @@
+feature_name,cardinality,top_categories,encoding_strategy,one_hot_suitable
+brand,10,Audi: 325; Toyota: 315; Kia: 233; Ford: 205; BMW: 192; Honda: 168; Chevrolet: 153; Mercedes-Benz: 150; Hyundai: 117; Nissan: 112,one-hot encoding fitted inside the training fold only,True

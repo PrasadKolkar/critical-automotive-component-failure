@@ -1,0 +1,7 @@
+issue,column,affected_rows,minimum_value,maximum_suspicious_value,phase_2_decision,decision_reason
+negative wheel speed,wheel_speed_fl_kph,50,-35.5539855746647,-0.601723328052557,preserve,Values are frequent and not only tiny noise; do not apply arbitrary clipping without domain confirmation.
+negative wheel speed,wheel_speed_fr_kph,52,-56.399754748527,-0.226710795795185,preserve,Values are frequent and not only tiny noise; do not apply arbitrary clipping without domain confirmation.
+negative wheel speed,wheel_speed_rl_kph,37,-55.1327645436964,-1.23124088952828,preserve,Values are frequent and not only tiny noise; do not apply arbitrary clipping without domain confirmation.
+negative wheel speed,wheel_speed_rr_kph,48,-42.2317411654975,-0.424362524684013,preserve,Values are frequent and not only tiny noise; do not apply arbitrary clipping without domain confirmation.
+humidity above 100,humidity_percent,4,104.785792414391,117.766913033149,preserve,Only a few impossible values; preserve for now and consider clipping/imputation as a controlled later preprocessing experiment.
+negative vibration,vibration_level,1,-0.00432902198950069,-0.00432902198950069,preserve,The single negative value is very close to zero; preserve rather than silently clipping.

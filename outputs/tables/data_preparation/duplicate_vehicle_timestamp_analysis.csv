@@ -1,0 +1,40 @@
+vehicle_id,timestamp,records_in_group,all_original_values_identical,telemetry_values_identical,target_labels_identical,failure_metadata_identical,contains_positive_row,classification
+VEH0000,2023-01-01 06:14:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0001,2023-01-01 01:10:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0001,2023-01-01 04:30:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0001,2023-01-01 09:20:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0002,2023-01-01 04:48:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0003,2023-01-01 04:48:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0006,2023-01-01 01:44:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0006,2023-01-01 05:00:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0008,2023-01-01 15:00:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0009,2023-01-01 06:32:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0011,2023-01-01 23:12:00,2,False,False,False,False,True,suspicious duplicate records with conflicting outcome metadata
+VEH0012,2023-01-01 02:00:00,3,False,False,True,True,False,separate measurements sharing timestamp
+VEH0013,2023-01-01 07:48:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0014,2023-01-01 01:20:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0015,2023-01-01 02:45:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0017,2023-01-01 03:44:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0018,2023-01-01 02:36:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0020,2023-01-01 09:36:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0022,2023-01-01 05:41:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0023,2023-01-01 04:12:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0024,2023-01-01 01:40:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0026,2023-01-01 03:36:00,2,False,False,False,False,True,suspicious duplicate records with conflicting outcome metadata
+VEH0027,2023-01-01 14:00:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0033,2023-01-01 05:00:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0034,2023-01-01 04:40:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0035,2023-01-01 06:58:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0035,2023-01-01 10:48:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0036,2023-01-01 02:13:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0037,2023-01-01 03:30:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0037,2023-01-01 04:40:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0039,2023-01-01 00:32:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0039,2023-01-01 04:00:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0039,2023-01-01 06:36:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0039,2023-01-02 00:30:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0040,2023-01-01 06:46:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0042,2023-01-01 05:36:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0044,2023-01-01 01:45:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0044,2023-01-01 12:36:00,2,False,False,True,True,False,separate measurements sharing timestamp
+VEH0045,2023-01-01 08:00:00,2,False,False,True,True,False,separate measurements sharing timestamp

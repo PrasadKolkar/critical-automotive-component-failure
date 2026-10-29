@@ -6,6 +6,12 @@ For this study, I compared six machine-learning approaches using a supplied synt
 
 The dataset contains 1,970 readings from 50 vehicles. An issue label appears on just 35 readings. These readings come from 25 vehicles. Because each component has few examples, the three issue types are combined into one classification task.
 
+## Results dashboard
+
+The [interactive dashboard](https://prasadkolkar.github.io/critical-automotive-component-failure/dashboard.html) brings together the model results, confusion matrices and follow-up experiments. It also shows predictions for random readings from the saved evaluation results.
+
+To view it offline, download [dashboard.html](dashboard.html) and open it in a browser.
+
 ## How the project is organised
 
 The work is presented in three notebooks. They follow the same path as the report, starting with the data and ending with individual predictions.
@@ -85,6 +91,7 @@ The dataset and vehicle groups stay fixed. The study also keeps the candidate se
 
 ```text
 notebooks/             Three analysis notebooks
+dashboard.html         Interactive results dashboard
 data/                  Dataset and vehicle groups
 models/                Saved models
 results/

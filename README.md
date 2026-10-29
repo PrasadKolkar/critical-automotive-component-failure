@@ -64,7 +64,7 @@ Running the example cell again picks a new sample. The models stay unchanged. Ea
 
 ### Google Colab
 
-Open a notebook in [Google Colab](https://colab.research.google.com/) and choose a Python CPU runtime. Run the cells in order and connect Google Drive when prompted.
+Open a notebook in [Google Colab](https://colab.research.google.com/) and choose a Python CPU runtime. Run the cells in order and connect Google Drive when prompted. If setup updates a library that is already loaded, it pauses before the analysis. Choose **Runtime → Restart session**, then **Run all**.
 
 The project folder is `MyDrive/Automotive_Component_Failure/`. It holds the dataset and saves models and results between sessions.
 

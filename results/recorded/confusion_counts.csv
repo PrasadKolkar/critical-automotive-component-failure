@@ -1,0 +1,31 @@
+config_id,label,source,threshold,true_positives,false_positives,true_negatives,false_negatives
+legacy_xgb_noabs,XGB,legacy_saved,0.5,34,1,1934,1
+legacy_xgb_abs,XGB + ABS,legacy_saved,0.5,34,2,1933,1
+mlp_noabs_selection_none_weighted,MLP + selection,new_run,0.5,34,1,1934,1
+svm_abs_original_none_weighted,SVM + ABS,new_run,0.5,34,3,1932,1
+svm_noabs_original_none_weighted,SVM,new_run,0.5,34,3,1932,1
+mlp_noabs_original_none_weighted,MLP,new_run,0.5,34,4,1931,1
+xgb_noabs_original_none_unweighted,XGB unweighted,new_run,0.5,29,0,1935,6
+xgb_noabs_original_random_over_s42,XGB + random_over (seed 42),new_run,0.5,32,1,1934,3
+xgb_noabs_original_smotenc_s2026,XGB + smotenc (seed 2026),new_run,0.5,33,1,1934,2
+mlp_abs_original_none_weighted,MLP + ABS,new_run,0.5,33,3,1932,2
+xgb_noabs_original_smotenc_s7,XGB + smotenc (seed 7),new_run,0.5,33,1,1934,2
+xgb_noabs_original_smotenc_s42,XGB + smotenc (seed 42),new_run,0.5,30,1,1934,5
+xgb_noabs_original_random_over_s2026,XGB + random_over (seed 2026),new_run,0.5,32,3,1932,3
+legacy_rf_noabs,RF,legacy_saved,0.5,29,0,1935,6
+xgb_noabs_original_random_over_s7,XGB + random_over (seed 7),new_run,0.5,32,1,1934,3
+mlp_noabs_pca_none_weighted,MLP + pca,new_run,0.5,31,6,1929,4
+legacy_rf_abs,RF + ABS,legacy_saved,0.5,26,0,1935,9
+lr_noabs_selection_none_weighted,LR + selection,new_run,0.5,34,63,1872,1
+gaussiannb_noabs_original_none_unweighted,GaussianNB,new_run,0.5,31,59,1876,4
+gaussiannb_abs_original_none_unweighted,GaussianNB + ABS,new_run,0.5,31,74,1861,4
+lr_noabs_original_smotenc_s42,LR + smotenc (seed 42),new_run,0.5,31,16,1919,4
+lr_noabs_original_random_over_s42,LR + random_over (seed 42),new_run,0.5,29,8,1927,6
+lr_noabs_original_smotenc_s2026,LR + smotenc (seed 2026),new_run,0.5,30,17,1918,5
+lr_noabs_original_random_over_s7,LR + random_over (seed 7),new_run,0.5,29,14,1921,6
+lr_noabs_original_smotenc_s7,LR + smotenc (seed 7),new_run,0.5,29,11,1924,6
+legacy_lr_abs,LR + ABS,legacy_saved,0.5,33,72,1863,2
+legacy_lr_noabs,LR,legacy_saved,0.5,32,67,1868,3
+lr_noabs_original_none_unweighted,LR unweighted,new_run,0.5,21,2,1933,14
+lr_noabs_original_random_over_s2026,LR + random_over (seed 2026),new_run,0.5,29,17,1918,6
+lr_noabs_pca_none_weighted,LR + pca,new_run,0.5,31,56,1879,4

@@ -1,0 +1,49 @@
+{
+  "changed_class_rows": [
+    1249,
+    1904,
+    602,
+    157,
+    610,
+    1209,
+    648
+  ],
+  "exact_cause": "unknown; historical runtime and fitted models were not archived; no version search performed",
+  "reconstructed": {
+    "accuracy": 0.9964467005076142,
+    "average_precision": 0.9784587637379388,
+    "f1": 0.9041095890410958,
+    "f1_is_zero": false,
+    "false_negatives": 2,
+    "false_positives": 5,
+    "positive_predictions": 38,
+    "pr_auc": 0.9784587637379388,
+    "precision": 0.868421052631579,
+    "recall": 0.9428571428571428,
+    "recall_is_zero": false,
+    "roc_auc": 0.9993355481727575,
+    "roc_auc_defined": true,
+    "true_negatives": 1930,
+    "true_positives": 33,
+    "zero_positive_predictions": false
+  },
+  "role": "reproducibility check only, not new tuned model contender",
+  "saved": {
+    "accuracy": 0.9989847715736041,
+    "average_precision": 0.9939061078977045,
+    "f1": 0.9714285714285714,
+    "f1_is_zero": false,
+    "false_negatives": 1,
+    "false_positives": 1,
+    "positive_predictions": 35,
+    "pr_auc": 0.9939061078977045,
+    "precision": 0.9714285714285714,
+    "recall": 0.9714285714285714,
+    "recall_is_zero": false,
+    "roc_auc": 0.9998818752307125,
+    "roc_auc_defined": true,
+    "true_negatives": 1934,
+    "true_positives": 34,
+    "zero_positive_predictions": false
+  }
+}

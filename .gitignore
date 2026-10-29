@@ -1,0 +1,15 @@
+.DS_Store
+__MACOSX/
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+/models/
+/results/tables/
+/results/figures/
+/results/predictions/
+/environment.json

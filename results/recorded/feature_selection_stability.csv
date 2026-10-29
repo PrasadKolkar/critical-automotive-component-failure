@@ -1,0 +1,34 @@
+feature,selected_folds,selected_count,selection_frequency,selection_status,selection_method,kind
+air_flow_rate_gps,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+battery_current_a,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+battery_voltage_v,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+brake_fluid_level_psi,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+brake_temp_c,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+brand,"[1, 2, 3, 4, 5]",5,1.0,always_retained_not_ranked,one-hot outside numeric selector,categorical
+engine_temp_c,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+gps_latitude,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+vibration_level,"[1, 2, 3, 4, 5]",5,1.0,all_folds,"ANOVA F ranking, inner-selected k10/20",numeric
+odometer_reading,"[2, 3, 4, 5]",4,0.8,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+oil_pressure_psi,"[1, 2, 3, 4]",4,0.8,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+ambient_temp_c,"[2, 5]",2,0.4,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+vehicle_speed_kph,"[1, 2]",2,0.4,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+battery_health_percent,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+brake_pad_wear_mm,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+engine_hours,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+engine_rpm,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+exhaust_gas_temp_c,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+gps_longitude,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+wheel_speed_rl_kph,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+wheel_speed_rr_kph,[2],1,0.2,fold_specific,"ANOVA F ranking, inner-selected k10/20",numeric
+alternator_output_v,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+battery_charge_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+battery_temp_c,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+brake_pedal_pos_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+coolant_temp_c,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+engine_load_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+fuel_consumption_lph,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+fuel_level_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+humidity_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+throttle_pos_percent,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+wheel_speed_fl_kph,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
+wheel_speed_fr_kph,[],0,0.0,never_selected,"ANOVA F ranking, inner-selected k10/20",numeric
